@@ -1,18 +1,5 @@
 #!/bin/sh
 
-# 参照サイト:
-# https://qiita.com/yaiwase/items/3a58313e028315004a56
-#
-# 利用方法
-# $ docker pull continuumio/anaconda3
-# $ sh jupy.sh
-#
-# URL取得
-# $ docker logs jupyter-notebook
-#
-# コンテナの中に入りたい
-# $ docker exec -i -t jupyter-notebook bash
-
 # jupyte-notebookのディレクトリ作成
 dir=$HOME/jupyter-notebook/notebooks
 [ ! -e $dir ] && mkdir -p $dir
