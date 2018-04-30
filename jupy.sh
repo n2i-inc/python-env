@@ -15,4 +15,4 @@ docker run \
     --name jupyter-notebook \
     -v $HOME/jupyter-notebook/notebooks:/opt/notebooks \
     continuumio/anaconda3 \
-    /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --no-browser --allow-root"
+    /bin/bash -c "apt-get update && apt-get install -y libgl1-mesa-dev && /opt/conda/bin/conda install jupyter -y --quiet && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --no-browser --allow-root"
