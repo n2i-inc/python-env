@@ -20,7 +20,7 @@ $ docker logs jupyter-notebook
 
 コンテナの中に入りたい
 ```
-$ docker exec -i -t jupyter-notebook bash
+$ docker exec -it jupyter-notebook bash
 ```
 
 ## 参照サイト
