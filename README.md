@@ -10,7 +10,6 @@
 ## Usage
 
 ```
-$ docker pull continuumio/anaconda3
 $ sh jupy.sh
 ```
 

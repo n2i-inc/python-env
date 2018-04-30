@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# anaconda3 pull
+docker images | grep -w continuumio/anaconda3
+if [ ! $? = 0 ]; then
+  docker pull continuumio/anaconda3
+fi
+
 # jupyte-notebookのディレクトリ作成
 dir=$HOME/jupyter-notebook/notebooks
 [ ! -e $dir ] && mkdir -p $dir
