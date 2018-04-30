@@ -13,12 +13,15 @@
 $ sh jupy.sh
 ```
 
-URL取得
+Jupiter NotebookのURL取得
+> 基本はこの中でやる方がスムーズです
 ```
 $ docker logs jupyter-notebook
 ```
 
 コンテナの中に入りたい
+> コンテナの中に入って色々できますが、DISPLAYが設定されていない為、matplotlibによる作図はできません。
+> それでもやりたい場合は[このあたりの記事](https://qiita.com/TomokIshii/items/3a26ee4453f535a69e9e)を参照してください。
 ```
 $ docker exec -it jupyter-notebook bash
 ```
